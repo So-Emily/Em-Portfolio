@@ -14,16 +14,21 @@ body {
 /* Header Styles */
 header {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     padding:20px 0;
 }
 
+/* Styling of name in header */
 header h1 {
     margin-left: 20px;
     display: inline-block;
     vertical-align: middle;
+    background-color: #653fba;
+    padding: 10px;
+    /* color: #fff; */
 }
 
+/* Styling of navigation bar */
 header nav { 
     /* Styles for the navigation bar */
     margin-right: 30px;
@@ -33,16 +38,77 @@ header nav {
     list-style-type: none;
 }
 
+/* Styling of the in nav list to add decor and placing */
 header nav ul li {
     /* Styles for the navigation bar items */
     display: inline-block;
     margin-left: 25px;
     margin-top: 5px;
     vertical-align: middle; 
+    text-decoration: underline;
+    /* padding-bottom: 2px;  */
 }
 
+/* Styling of the links in the nav bar */
 a {
     color: #fff;
     text-decoration: none;
 }
 
+/* Styling of the links in the nav bar and links when hovered */
+a:hover {
+    color: #653fba;
+}
+
+/* Main image on topstyles */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Setting the width to have the main image fill the page */
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling of the text on the main image */
+.imgSub {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* Styling of the main body */
+.body-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Styling of the main body biggest title headers*/
+main h2 {
+    font-size: 45px
+    
+}
+
+/* Styling of the main body smaller title headers */
+main h3 {
+    font-size: 30px;
+    
+    
+}
+
+/* Styling of the main body text */
+.body-container .about, .projects, .contact, .resume {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
