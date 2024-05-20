@@ -14,7 +14,7 @@ body {
 /* Header Styles */
 header {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     padding:20px 0;
 }
 
@@ -22,6 +22,7 @@ header h1 {
     margin-left: 20px;
     display: inline-block;
     vertical-align: middle;
+    /* color: #fff; */
 }
 
 header nav { 
@@ -33,16 +34,30 @@ header nav {
     list-style-type: none;
 }
 
+
 header nav ul li {
     /* Styles for the navigation bar items */
     display: inline-block;
     margin-left: 25px;
     margin-top: 5px;
     vertical-align: middle; 
+    text-decoration: underline;
+    /* padding-bottom: 2px;  */
 }
+
 
 a {
     color: #fff;
     text-decoration: none;
+}
+
+a:hover {
+    color: #993ad8;
+}
+
+main .about, .projects, .contact, .resume {
+   padding-left: 100px;
+   padding-bottom: 20px;
+   padding-top: 20px;   
 }
 
