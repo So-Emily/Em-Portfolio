@@ -15,38 +15,39 @@ body {
 header {
     background-color: #333;
     color: #ffffff;
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 /* Styling of name in header */
 header h1 {
-    margin-left: 20px;
+    font-size: 30px;
+    text-indent: 20px;
     display: inline-block;
     vertical-align: middle;
     background-color: #653fba;
-    padding: 10px;
-    /* color: #fff; */
+    padding: 10px 30px 10px 10px;
+    border-radius: 0 10px 10px 0;
 }
 
 /* Styling of navigation bar */
-header nav { 
+header nav {
     /* Styles for the navigation bar */
-    margin-right: 30px;
+    margin-right: 75px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     list-style-type: none;
 }
 
-/* Styling of the in nav list to add decor and placing */
+/* Styling of the items in the navigation bar */
 header nav ul li {
     /* Styles for the navigation bar items */
     display: inline-block;
     margin-left: 25px;
-    margin-top: 5px;
-    vertical-align: middle; 
-    text-decoration: underline;
-    /* padding-bottom: 2px;  */
+    margin-top: 12px;
+    vertical-align: middle;
+    border-bottom: 3px solid currentColor; /* Creates a custom underline */
+    padding-bottom: 5px; /* Adjusts the distance of the underline from the text */
 }
 
 /* Styling of the links in the nav bar */
@@ -55,7 +56,7 @@ a {
     text-decoration: none;
 }
 
-/* Styling of the links in the nav bar and links when hovered */
+/* Styling of the links in the nav bar when hovered */
 a:hover {
     color: #653fba;
 }
@@ -82,33 +83,79 @@ a:hover {
     transform: translate(-50%, -50%);
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 /* Styling of the main body */
 .body-container {
     display: flex;
     flex-direction: column;
-    
+    color: #fff;
 }
 
-/* Styling of the main body biggest title headers*/
-main h2 {
-    font-size: 45px
+/* Styling of the main body biggest title headers */
+/* main h2 {
     
-}
+} */
 
 /* Styling of the main body smaller title headers */
 main h3 {
     font-size: 30px;
-    
-    
 }
 
 /* Styling of the main body text */
-.body-container .about, .projects, .contact, .resume {
+.body-container .about,
+.body-container .projects,
+.body-container .contact,
+.body-container .resume {
     margin: 20px;
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text,
+.projects-text,
+.contact-text,
+.resume-text {
+    margin-right: 20px;
+    padding: 20px;
+    /* padding-right: 200px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+}
+
+.projects-base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 200px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+h2 {
+    position: relative;
+    font-size: 45px;
+    padding-left: 20px;
+    padding-top: 50px;
+} 
+
+
+
+/*(
+h2::after {
+    content: "";
+    display: block;
+    width: 4px; /* Adjusts the width of the line */
+    /* height: 100px; Adjusts the height of the line */
+    /* background-color: #000; Adjusts the color of the line */
+    /* position: absolute; */
+    /* left: 20%; Adjusts the position of the line */
+    /* top: 0; */
+/* } */
