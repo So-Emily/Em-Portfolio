@@ -81,81 +81,92 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 20px;
 }
 
-/* Styling of the main body */
-.body-container {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
+ul {
+    list-style-type: none;
 }
 
-/* Styling of the main body biggest title headers */
-/* main h2 {
-    
-} */
-
-/* Styling of the main body smaller title headers */
-main h3 {
-    font-size: 30px;
+/* container */
+.two-columns {
+    padding-top: 20px;
+    display:flex;
 }
 
-/* Styling of the main body text */
-.body-container .about,
-.body-container .projects,
-.body-container .contact,
-.body-container .resume {
-    margin: 20px;
-    padding: 20px;
-    padding-right: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-text,
-.projects-text,
-.contact-text,
-.resume-text {
-    margin-right: 20px;
-    padding: 20px;
-    /* padding-right: 200px; */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    text-align: center;
-}
-
-.projects-base {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-right: 200px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    position: relative;
-    font-size: 45px;
-    padding-left: 20px;
-    padding-top: 50px;
+/* columns */
+.two-columns > * {
+    width:100%;
+    padding: 5rem;
 } 
 
 
+/* Left side column Styling - Pre Line*/
+.two-columns > *:first-child {
+    position: relative;  
+    width: 20%;
+    font-size: 73px;
+    color: #3d2275;
+    padding-right: 7px; 
+    direction: rtl;
+}
 
-/*(
-h2::after {
+/* .head-con {
+    margin-left: 60px;
+} */
+
+/* the line after each header */
+.two-columns h2::after {
     content: "";
     display: block;
-    width: 4px; /* Adjusts the width of the line */
-    /* height: 100px; Adjusts the height of the line */
-    /* background-color: #000; Adjusts the color of the line */
-    /* position: absolute; */
-    /* left: 20%; Adjusts the position of the line */
-    /* top: 0; */
-/* } */
+    width: 5px;
+    height: 90%;
+    background-color: #513294;
+    position: absolute;
+    left: 100%;
+    top: 10px;
+    border-radius: 5px;
+}
+
+/* styling of each right column */
+.right-text {
+    font-size: 20px;
+}
+
+/* To move the copntacts down to center - struggling to find another way */
+.right-text-con {
+    padding-top: 140px;
+    font-size: 20px;
+}
+
+.head-con {
+    margin-left: 10px;
+}
+
+.contact {
+    margin: 20px;
+    border-radius: 5px;
+    border-bottom: 5px solid #513294; /* Creates a custom underline */
+    padding-bottom: 3px; /* Adjusts the distance of the underline from the text */
+    /* font-weight: bold; */
+    color: whitesmoke;
+}
+
+/* creating individual project boxes */
+.project {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
