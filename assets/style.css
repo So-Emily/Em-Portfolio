@@ -133,27 +133,26 @@ ul {
 
 /* styling of each right column */
 .right-text {
+    display: flex;
     font-size: 20px;
-}
-
-/* To move the copntacts down to center - struggling to find another way */
-.right-text-con {
-    padding-top: 140px;
-    font-size: 20px;
-}
-
-.head-con {
-    margin-left: 10px;
-}
-
-.contact {
     margin: 20px;
-    border-radius: 5px;
-    border-bottom: 5px solid #513294; /* Creates a custom underline */
-    padding-bottom: 3px; /* Adjusts the distance of the underline from the text */
-    /* font-weight: bold; */
+    /* Aligns the child elements at the start of the container */
+    align-items: flex-start;
     color: whitesmoke;
 }
+
+/* Styling of the contact section
+no wrap, personal underline, margin top to center it */
+.contact {
+    margin: 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    border-bottom: 5px solid #513294; /* Creates a custom underline */
+    padding-bottom: 3px;
+    color: whitesmoke;
+    white-space: nowrap;
+}
+
 
 /* creating individual project boxes */
 .project {
@@ -163,10 +162,11 @@ ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
-
-
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .imgSub {
+        font-size: 30px ;
+    }
+}
+    
 
