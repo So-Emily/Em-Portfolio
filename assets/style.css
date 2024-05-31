@@ -135,9 +135,14 @@ ul {
 .right-text {
     display: flex;
     font-size: 20px;
-    align-items: flex-start; /* Aligns the child elements at the start of the container */
+    margin: 20px;
+    /* Aligns the child elements at the start of the container */
+    align-items: flex-start;
+    color: whitesmoke;
 }
 
+/* Styling of the contact section
+no wrap, personal underline, margin top to center it */
 .contact {
     margin: 20px;
     margin-top: 60px;
@@ -149,7 +154,6 @@ ul {
 }
 
 
-
 /* creating individual project boxes */
 .project {
     margin: 20px;
@@ -158,10 +162,11 @@ ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
-
-
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .imgSub {
+        font-size: 30px ;
+    }
+}
+    
 
