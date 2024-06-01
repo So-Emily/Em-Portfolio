@@ -1,5 +1,7 @@
-# 02 Advanced CSS: Portfolio
+# My Portfolio
 
+## Description 
+This css projects is the start to my portfolio that includes projects, contacts and my resume.
 
 
 
