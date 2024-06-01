@@ -114,10 +114,6 @@ ul {
     direction: rtl;
 }
 
-/* .head-con {
-    margin-left: 60px;
-} */
-
 /* the line after each header */
 .two-columns h2::after {
     content: "";
@@ -155,18 +151,34 @@ no wrap, personal underline, margin top to center it */
 
 
 /* creating individual project boxes */
+/* Parent container for projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: block; */
+    max-width: 50%; 
+    margin: 0 auto; 
+}
+
+/* Individual project boxes */
 .project {
+    flex: 1 0 50%; /* Adjust this value to change the size of the boxes */
+    max-width: 50%; /* Adjust this value to change the maximum width of the boxes */
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Query for screens smaller than 768px */
-@media (max-width: 768px) {
-    .imgSub {
-        font-size: 30px ;
-    }
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
+
+/* Media Query for screens smaller than 768px */
+/* @media (){
+
+} */
     
 
