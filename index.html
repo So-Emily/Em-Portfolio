@@ -14,10 +14,10 @@
         
             <nav>
                 <ul>
-                    <li><a href="#">About Me</a></li> <!-- Navigation link to About Me section -->
-                    <li><a href="#">Projects</a></li> <!-- Navigation link to Projects section -->
-                    <li><a href="#">Contact Me</a></li> <!-- Navigation link to Contact Me section -->
-                    <li><a href="#">Resume</a></li> <!-- Navigation link to Resume section -->
+                    <li><a href="#about-me">About Me</a></li> <!-- Navigation link to About Me section -->
+                    <li><a href="#projects-id">Projects</a></li> <!-- Navigation link to Projects section -->
+                    <li><a href="#contact-me">Contact Me</a></li> <!-- Navigation link to Contact Me section -->
+                    <li><a href="https://drive.google.com/file/d/1f6KwNeaGwvNssH7OhxHpoLSe9hcIelp0/view?usp=sharing" target="_blank">Resume</a></li> <!-- Navigation link to Resume section -->
                 </ul>
             </nav>
         </div>
@@ -26,11 +26,13 @@
     <main>
         
         <div class="image-container">
-            <img class="image" src="assets/images/space-trees.jpg" alt="Drawn Purple Space Banner"> <!-- Image with alt text -->
-            <p class="imgSub">Welcome to Emily's Place</p> <!-- Image caption -->
+            <!-- Image with alt text -->
+            <img class="image" src="assets/images/space-trees.jpg" alt="Drawn Purple Space Banner"> 
+            <!-- Image caption -->
+            <p class="imgSub">Welcome to Emily's Place</p> 
         </div>
             
-        <div class="two-columns">
+        <div class="two-columns" id="about-me">
             <h2>About Me</h2>
             <p class="right-text">Hello there! I am Emily Sorinao. I am from Seattle, but live in California at the moment.
                 I am studying coding and web development with the UC Berkeley Extension Bootcamp. 
@@ -39,25 +41,40 @@
             </p>
         </div>
 
-        <div class="two-columns">
+        <div class="two-columns" id="projects-id">
             <h2>Projects</h2>
             <div>
                 <ul class="right-text">
-                    <!-- Link to Project 1 -->
-                    <li class="project"><a href="https://so-emily.github.io/prework-study-guide/">Prework Study Guide</a></li>
-                    <!-- Link to Project 2 -->
-                    <li class="project"><a href="https://so-emily.github.io/Payroll-Tracker/">Payroll Tracker</a></li> 
-                     <!-- Link to Project 3 -->
-                    <li class="project"><a href="#">Project 3</a></li> 
+                    <!-- Project 1 Container -->
+                    <li class="project">
+                        <div class="project-container">
+                            <img class="project-image" src="assets/images/pre-work-snip.PNG" alt="Prework Study Guide Website Snippet">
+                            <a href="https://so-emily.github.io/prework-study-guide/" target="_blank">Prework Study Guide</a>
+                        </div>
+                    </li>
+                    <!-- Project 2 Container -->
+                    <li class="project">
+                        <div class="project-container">
+                            <img class="project-image" src="assets/images/payroll-snip.PNG" alt="Payroll Tracker Website Snippet">
+                            <a href="https://so-emily.github.io/Payroll-Tracker/" target="_blank">Payroll Tracker</a>
+                        </div>
+                    </li>
+                    <!-- Project 3 Container -->
+                    <li class="project">
+                        <div class="project-container">
+                            <img class="project-image" src="assets/images/api-blog-snip.gif" alt="Personal API Blog Website Snippet">
+                            <a href="https://github.com/So-Emily/Personal-API-Blog" target="_blank">Personal API Blog</a></li> 
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
 
-        <div class="two-columns">
+        <div class="two-columns" id="contact-me">
             <h2>Contact Me</h2>
             <div class="right-text">
-                <p class ="contact">Email: esoriano110@gmail.com</p> <!-- Contact email -->
-                <p class ="contact">Phone: 555-555-5555</p>
+                <p class ="contact"> Email:  &nbsp;<a href="mailto:esoriano110@gmail.com">esoriano110@gmail.com</a></p> <!-- Contact email -->
+                <p class ="contact">Phone:  &nbsp;<a href="tel:206-595-8179">206-595-8179</a></p>
                 <p class ="contact"><a href="https://github.com/So-Emily"> GitHub </p>
             </div>
         </div>

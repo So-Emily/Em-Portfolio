@@ -162,6 +162,13 @@ no wrap, personal underline, margin top to center it */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 /* Media Query for screens smaller than 768px */
 @media (max-width: 768px) {
     .imgSub {
