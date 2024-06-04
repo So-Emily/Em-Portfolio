@@ -142,18 +142,23 @@ ul {
     padding-bottom: 3px;
     color: whitesmoke;
     white-space: nowrap;
+    ;
 }
 
 /* creating individual project boxes */
 /* Parent container for projects */
-.projects-container {
-    max-width: 50%;
-    margin: 0 auto;
-}
-
 /* changing the size of the font for projects */
 .project-container a {
     font-size: 20px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex; 
+    justify-content: center; 
+    background-color: #513294;
+    
 }
 
 /* Individual project boxes */
@@ -161,25 +166,28 @@ ul {
     flex: 1 0 50%;
     max-width: 40%;
     margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 5px; */
+    border: 5px solid #513294;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-one {
     flex: 1 0 80%;
-    max-width: 60%;
-    margin: 0px 20px 20px 15%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    margin: 0px 0px 0px 9%;
+    /* padding: 20px; */
+    /* border-radius: 5px; */
+    border: 5px solid #513294;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    padding-bottom: 5px;
+    /* border-radius: 5px; */
 }
+
 
 /* Media Query for screens smaller than 768px */
 /* @media (){
