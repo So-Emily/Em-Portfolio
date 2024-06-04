@@ -5,7 +5,7 @@ This CSS project is the start of my portfolio, including projects, contacts, and
 
 
 
-![Portfolio-Snip](https://github.com/So-Emily/Em-Portfolio/assets/10500315/4d5ae990-cca0-47f2-ac6b-e318e136b7df)(https://so-emily.github.io/Em-Portfolio/)
+![Portfolio-Snip](https://github.com/So-Emily/Em-Portfolio/assets/10500315/4d5ae990-cca0-47f2-ac6b-e318e136b7df)
 
 
 ## Executing Program
