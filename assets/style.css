@@ -153,18 +153,30 @@ no wrap, personal underline, margin top to center it */
 /* creating individual project boxes */
 /* Parent container for projects */
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: block; */
     max-width: 50%; 
     margin: 0 auto; 
+    
+}
+
+/* changing the size of the font for projects */
+.project-container a {
+    font-size: 20px; 
 }
 
 /* Individual project boxes */
 .project {
     flex: 1 0 50%; /* Adjust this value to change the size of the boxes */
-    max-width: 50%; /* Adjust this value to change the maximum width of the boxes */
+    max-width: 40%; /* Adjust this value to change the maximum width of the boxes */
     margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-one {
+    flex: 1 0 80%; /* Adjust this value to change the size of the boxes */
+    max-width: 60%; /* Adjust this value to change the maximum width of the boxes */
+    margin: 0px 20px 20px 15%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
