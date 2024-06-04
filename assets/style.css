@@ -158,6 +158,7 @@ ul {
     display: flex; 
     justify-content: center; 
     background-color: #513294;
+    border-radius: 10px;
     
 }
 
@@ -165,19 +166,18 @@ ul {
 .project {
     flex: 1 0 50%;
     max-width: 40%;
-    margin: 20px;
-    /* border-radius: 5px; */
-    border: 5px solid #513294;
+    margin: 30px;
+    border-radius: 10px;
+    /* border: 5px solid #513294; */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-one {
     flex: 1 0 80%;
     max-width: 70%;
-    margin: 0px 0px 0px 9%;
-    /* padding: 20px; */
-    /* border-radius: 5px; */
-    border: 5px solid #513294;
+    margin: 0px 0px 0px 12%;
+    border-radius: 10px;
+    /* border: 5px solid #513294; */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -185,7 +185,7 @@ ul {
     width: 100%;
     height: auto;
     padding-bottom: 5px;
-    /* border-radius: 5px; */
+    border-radius: 10px;
 }
 
 
