@@ -12,6 +12,8 @@ This CSS project is the start of my portfolio, including projects, contacts, and
 This program is live through a Github link
 https://so-emily.github.io/Em-Portfolio/
 
+<br>
+<br>
 
 # The Assignment README:
 ## Your Task
