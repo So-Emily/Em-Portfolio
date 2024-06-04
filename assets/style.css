@@ -31,7 +31,6 @@ header h1 {
 
 /* Styling of navigation bar */
 header nav {
-    /* Styles for the navigation bar */
     margin-right: 75px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -41,13 +40,12 @@ header nav {
 
 /* Styling of the items in the navigation bar */
 header nav ul li {
-    /* Styles for the navigation bar items */
     display: inline-block;
     margin-left: 25px;
     margin-top: 12px;
     vertical-align: middle;
-    border-bottom: 3px solid currentColor; /* Creates a custom underline */
-    padding-bottom: 5px; /* Adjusts the distance of the underline from the text */
+    border-bottom: 3px solid currentColor;
+    padding-bottom: 5px;
 }
 
 /* Styling of the links in the nav bar */
@@ -94,23 +92,22 @@ ul {
 /* container */
 .two-columns {
     padding-top: 20px;
-    display:flex;
+    display: flex;
 }
 
 /* columns */
 .two-columns > * {
-    width:100%;
+    width: 100%;
     padding: 5rem;
-} 
+}
 
-
-/* Left side column Styling - Pre Line*/
+/* Left side column Styling - Pre Line */
 .two-columns > *:first-child {
-    position: relative;  
+    position: relative;
     width: 20%;
     font-size: 73px;
     color: #3d2275;
-    padding-right: 7px; 
+    padding-right: 7px;
     direction: rtl;
 }
 
@@ -132,39 +129,47 @@ ul {
     display: flex;
     font-size: 20px;
     margin: 20px;
-    /* Aligns the child elements at the start of the container */
     align-items: flex-start;
     color: whitesmoke;
 }
 
-/* Styling of the contact section
-no wrap, personal underline, margin top to center it */
+/* Styling of the contact section */
 .contact {
     margin: 20px;
     margin-top: 60px;
     border-radius: 5px;
-    border-bottom: 5px solid #513294; /* Creates a custom underline */
+    border-bottom: 5px solid #513294;
     padding-bottom: 3px;
     color: whitesmoke;
     white-space: nowrap;
 }
 
-
 /* creating individual project boxes */
 /* Parent container for projects */
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: block; */
-    max-width: 50%; 
-    margin: 0 auto; 
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* changing the size of the font for projects */
+.project-container a {
+    font-size: 20px;
 }
 
 /* Individual project boxes */
 .project {
-    flex: 1 0 50%; /* Adjust this value to change the size of the boxes */
-    max-width: 50%; /* Adjust this value to change the maximum width of the boxes */
+    flex: 1 0 50%;
+    max-width: 40%;
     margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-one {
+    flex: 1 0 80%;
+    max-width: 60%;
+    margin: 0px 20px 20px 15%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -180,5 +185,3 @@ no wrap, personal underline, margin top to center it */
 /* @media (){
 
 } */
-    
-
