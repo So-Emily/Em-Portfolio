@@ -8,7 +8,7 @@
 /* Body styles */
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(138, 141, 144);
+    background-color: rgb(201, 201, 201);
 }
 
 /* Header Styles */
@@ -130,7 +130,7 @@ ul {
     font-size: 20px;
     margin: 20px;
     align-items: flex-start;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
 }
 
 /* Styling of the contact section */
@@ -140,9 +140,17 @@ ul {
     border-radius: 5px;
     border-bottom: 5px solid #513294;
     padding-bottom: 3px;
-    color: whitesmoke;
+    color: #513294;
     white-space: nowrap;
-    ;
+}
+
+.contact a {
+    color: rgb(0, 0, 0);
+    
+}
+
+.contact a:hover {
+    color: #513294;
 }
 
 /* creating individual project boxes */
@@ -152,6 +160,10 @@ ul {
     font-size: 20px;
     padding-bottom: 3px;
     text-align: center;
+}
+
+.project-container a:hover {
+    color: #000000;
 }
 
 .project-container {
