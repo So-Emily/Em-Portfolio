@@ -200,8 +200,44 @@ ul {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1150px){
+    .project-container {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 30px;
+        
+    }
+}
 
 /* Media Query for screens smaller than 768px */
-/* @media (){
+    @media screen and (max-width: 768px) {
+        /* Modify header styles for smaller screens */
+        header {
+            padding: 10px 0;
+        }
+        
+        /* Modify navigation bar styles for smaller screens */
+        header nav {
+            margin-right: 0;
+            float: none;
+            font-size: 16px;
+        }
+        
+        /* Modify navigation bar item styles for smaller screens */
+        header nav ul li {
+            margin-left: 15px;
+            margin-top: 8px;
+            padding-bottom: 3px;
+        }
+        
+        /* Modify styling of the text on the main image for smaller screens */
+        .imgSub {
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 5px;
 
-} */
+        }
+    }
+
