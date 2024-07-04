@@ -31,15 +31,16 @@ header h1 {
 
 /* Styling of navigation bar */
 header nav {
-    margin-right: 75px;
+    margin-right: 5%;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     list-style-type: none;
+
 }
 
 /* Styling of the items in the navigation bar */
-header nav ul li {
+header nav a{
     display: inline-block;
     margin-left: 25px;
     margin-top: 12px;
@@ -59,34 +60,46 @@ a:hover {
     color: #653fba;
 }
 
+/* Initial state: hide dropdown content */
+.dropdown-container {
+    display: none;
+}
+
+/* Style the button used to open the dropdown */
+.dropdown-btn {
+    display: none; /* Hide dropdown button initially */
+}
+
 /* Main image on topstyles */
 .image-container {
     position: relative;
     width: 100%;
-    height: auto;
+    
 }
 
 /* Setting the width to have the main image fill the page */
 .image {
     width: 100%;
-    height: auto;
+    
 }
 
 /* Styling of the text on the main image */
 .imgSub {
-    font-size: 60px;
+    font-size: clamp(3rem, 7vw, 5rem);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #000000;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     border-radius: 10px;
     padding: 20px;
-}
-
-ul {
-    list-style-type: none;
+    white-space: nowrap;
+    min-width: 10%;
+    max-width: 100%;
+    overflow: visible;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 1px 1px 0 #000; /* Adds a simple black border effect */
 }
 
 /* container */
@@ -98,6 +111,7 @@ ul {
 /* columns */
 .two-columns > * {
     width: 100%;
+    height: auto;
     padding: 5rem;
 }
 
@@ -105,10 +119,19 @@ ul {
 .two-columns > *:first-child {
     position: relative;
     width: 20%;
-    font-size: 73px;
+    height: auto;
+    font-size: 4.5vw; /* Adjusted to use viewport width */
     color: #3d2275;
     padding-right: 7px;
+    padding-left: 7px;
     direction: rtl;
+    text-align: right;
+}
+
+.two-columns h2 {
+    margin: 0; /* Example value */
+    padding: 0; /* Example value */
+    width: 100%; /* Example value */
 }
 
 /* the line after each header */
@@ -119,7 +142,7 @@ ul {
     height: 90%;
     background-color: #513294;
     position: absolute;
-    left: 100%;
+    left: 110%;
     top: 10px;
     border-radius: 5px;
 }
@@ -127,27 +150,44 @@ ul {
 /* styling of each right column */
 .right-text {
     display: flex;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 520;
     margin: 20px;
     align-items: flex-start;
     color: rgb(0, 0, 0);
 }
 
-/* Styling of the contact section */
+/* Adjusted styling for the parent container of contact items */
+.right-text.text-center {
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically if needed */
+    text-align: center; /* Center text for direct text children */
+    font-size: 33px
+}
+
+.about-body{
+    padding: 80px;
+}
+
+/* Adjusted styling for the contact items */
 .contact {
-    margin: 20px;
-    margin-top: 60px;
+    margin: 20px; /* This sets the margin on all sides. You might want to adjust this if you're adding specific side margins */
+    margin-top: 60px; /* Adjust this value as needed for vertical spacing */
+    margin-bottom: 20px; /* Adds space below each contact item */
+    margin-left: 10px; /* Adds space to the left of each contact item */
+    margin-right: 7%; /* Adds space to the right of each contact item */
     border-radius: 4px;
     border-bottom: 5px solid #513294;
     padding-bottom: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
     color: #513294;
     white-space: nowrap;
-
+    text-align: center;
 }
 
 .contact a {
-    color: #513294;
+    color: #000000;
     
 }
 
@@ -159,8 +199,7 @@ ul {
 /* Parent container for projects */
 /* changing the size of the font for projects */
 .project-container a {
-    font-size: 20px;
-    padding-bottom: 3px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -168,34 +207,41 @@ ul {
     color: #000000;
 }
 
-.project-container {
-    display: flex; 
-    justify-content: center; 
-    background-color: #513294;
-    border-radius: 10px;
-    
+/* Adjusted CSS */
+ul.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
 }
 
-/* Individual project boxes */
-.project {
-    flex: 1 0 50%;
-    max-width: 40%;
-    margin: 30px;
+.project-container {
+    background-color: #513294;
     border-radius: 10px;
-    /* border: 5px solid #513294; */
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.project, .project-one {
+    margin: 15px; /* Adjust spacing around each project */
+    border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    flex: 1 0 45%; /* Adjust to control size */
+    max-width: 45%; /* Prevent it from growing too large */
 }
 
 .project-one {
-    flex: 1 0 80%;
-    max-width: 70%;
-    margin: 0px 0px 0px 12%;
-    border-radius: 10px;
-    /* border: 5px solid #513294; */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 0 90%; /* Make the first project larger */
+    max-width: 90%; /* Prevent it from growing too large */
+    margin: 30px auto; /* Center it and add more margin */
 }
 
 .project-image {
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     padding-bottom: 5px;
@@ -203,47 +249,16 @@ ul {
 }
 
 
-@media screen and (max-width: 1333px){
-   
+/* Media query for smaller screens */
+@media screen and (max-width: 770px) {
+    .navbar a { display: none; } /* Hide regular navbar links */
+    .dropdown-btn { 
+        display: block; /* Show dropdown button */
+        cursor: pointer;
+    }
+    .imgSub {
+        font-size: clamp(2rem, 5vw, 3rem); /* Adjusted for smaller screens */
+    }
+    
+    
 }
-@media screen and (max-width: 1150px){
-    .project-container {
-        flex-direction: column;
-    }
-
-    h2 {
-        font-size: 30px;
-        
-    }
-}
-
-/* Media Query for screens smaller than 768px */
-    @media screen and (max-width: 768px) {
-        /* Modify header styles for smaller screens */
-        header {
-            padding: 10px 0;
-        }
-        
-        /* Modify navigation bar styles for smaller screens */
-        header nav {
-            margin-right: 0;
-            float: none;
-            font-size: 16px;
-        }
-        
-        /* Modify navigation bar item styles for smaller screens */
-        header nav ul li {
-            margin-left: 15px;
-            margin-top: 8px;
-            padding-bottom: 3px;
-        }
-        
-        /* Modify styling of the text on the main image for smaller screens */
-        .imgSub {
-            font-size: 40px;
-            padding: 10px;
-            border-radius: 5px;
-
-        }
-    }
-
