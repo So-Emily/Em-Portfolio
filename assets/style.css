@@ -74,7 +74,6 @@ a:hover {
 .dropbtn:hover {
 background-color: #000000;
 }
-
 .dropbtn:focus {
 background-color: #653fba;
 
@@ -143,8 +142,6 @@ display: block;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 1px 1px 0 #000; /* Adds a simple black border effect */
 }
 
-
-
 /* container */
 .two-columns {
     padding-top: 20px;
@@ -165,17 +162,22 @@ display: block;
     height: auto;
     font-size: 4.5vw; /* Adjusted to use viewport width */
     color: #3d2275;
-    padding-right: 7px;
-    padding-left: 7px;
+    padding-right: 20px;
+    padding-left: 20px;
     direction: rtl;
     text-align: right;
 }
 
-.two-columns h2 {
-    margin: 0; /* Example value */
-    padding: 0; /* Example value */
-    width: 100%; /* Example value */
+.two-columns .about-title {
+    width: 26.8%;
 }
+
+.two-columns h2 {
+    margin: 1%; 
+    padding: 0; 
+    width: 100%; 
+}
+
 
 /* the line after each header */
 .two-columns h2::after {
@@ -185,7 +187,7 @@ display: block;
     height: 90%;
     background-color: #513294;
     position: absolute;
-    left: 110%;
+    left: 100%;
     top: 10px;
     border-radius: 5px;
 }
@@ -302,6 +304,9 @@ ul.d-flex {
     }
     .imgSub {
         font-size: clamp(2rem, 5vw, 3rem);
+    }
+    .two-columns .about-title {
+        width: 20%;
     }
     
 }
