@@ -4,8 +4,7 @@
 This CSS project is the start of my portfolio, including projects, contacts, and my resume.
 
 
-
-![Portfolio-Snip](https://github.com/So-Emily/Em-Portfolio/assets/10500315/4d5ae990-cca0-47f2-ac6b-e318e136b7df)
+![Portfolio-Snip](https://github.com/So-Emily/Em-Portfolio/assets/10500315/f4ce2c1e-9465-4cea-bb38-13ba8a48d551)
 
 
 ## Executing Program
