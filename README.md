@@ -1,5 +1,21 @@
-# 02 Advanced CSS: Portfolio
+# My Portfolio
 
+## Description 
+This CSS project is the start of my portfolio, including projects, contacts, and my resume.
+
+
+
+![Portfolio-Snip](https://github.com/So-Emily/Em-Portfolio/assets/10500315/4d5ae990-cca0-47f2-ac6b-e318e136b7df)
+
+
+## Executing Program
+This program is live through a Github link
+https://so-emily.github.io/Em-Portfolio/
+
+<br>
+<br>
+
+# The Assignment README:
 ## Your Task
 
 Welcome to this week's Challenge! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
