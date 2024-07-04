@@ -1,25 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Select the dropdown button
-    var dropdownBtn = document.querySelector('.dropdown-btn');
-    
-    // Toggle the dropdown container on click
-    dropdownBtn.addEventListener('click', function() {
-        var dropdownContainer = document.querySelector('.dropdown-container');
-        if (dropdownContainer.style.display === 'none' || dropdownContainer.style.display === '') {
-            dropdownContainer.style.display = 'block';
-        } else {
-            dropdownContainer.style.display = 'none';
-        }
-    });
-});
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
 
 console.log('Hello, World!');
 
-window.addEventListener('resize', function() {
-    var width = window.innerWidth;
-    var dropdownContainer = document.querySelector('.dropdown-container');
-    if (width >= 768) {
-        // Hide the dropdown menu on larger screens
-        dropdownContainer.style.display = 'none';
-    }
-});

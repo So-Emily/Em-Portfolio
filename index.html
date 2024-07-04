@@ -15,44 +15,50 @@
             <h1>Emily Soriano</h1>
             <nav class="navbar">
                 <!-- Navigation links -->
-                <a href="#about-me">About Me</a>
-                <a href="#projects-id">Projects</a>
-                <a href="#contact-me">Contact Me</a>
-                <a href="https://drive.google.com/file/d/1f6KwNeaGwvNssH7OhxHpoLSe9hcIelp0/view?usp=sharing" target="_blank">Resume</a>
-                
-                <!-- Dropdown button with image -->
-                <img src="assets/images/dropdown-btn.png" alt="Dropdown" class="dropdown-btn" style="width:30px; cursor:pointer;">
-                
-                <div class="dropdown-container" style="display:none;">
+                <div class="nav-before">
                     <a href="#about-me">About Me</a>
                     <a href="#projects-id">Projects</a>
                     <a href="#contact-me">Contact Me</a>
                     <a href="https://drive.google.com/file/d/1f6KwNeaGwvNssH7OhxHpoLSe9hcIelp0/view?usp=sharing" target="_blank">Resume</a>
                 </div>
+                <!-- Dropdown button with image -->
+                <!-- <img src="assets/images/dropdown-btn.png" alt="Dropdown" class="dropdown-btn" style="width:30px; cursor:pointer;">-->
+                
+                <!-- Dropdown content -->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#about-me">About Me</a>
+                        <a href="#projects-id">Projects</a>
+                        <a href="#contact-me">Contact Me</a>
+                        <a href="https://drive.google.com/file/d/1f6KwNeaGwvNssH7OhxHpoLSe9hcIelp0/view?usp=sharing" target="_blank">Resume</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-
     <main>
+        <!-- Top Image Section -->
         <div class="image-container">
             <img class="image" src="assets/images/space-trees.jpg" alt="Drawn Purple Space Banner"> 
             <p class="imgSub">Welcome to Emily's Place</p> 
         </div>
 
+        <!-- About Me Section -->
         <div class="two-columns" id="about-me">
             <h2>About Me</h2>
-            <p class="right-text about-body">
+            <p class="right-text text-center about-body">
                 <!-- About Me content -->
                 Hello there! My name is Emily Soriano. I am from Seattle, but live in California at the moment.<br><br>
                 I am studying coding and web development with the UC Berkeley Extension Bootcamp.<br><br>
                 My passions are video games, roller skating and my dog, Cleo.<br><br>
             </p>
         </div>
-
+        
+        <!-- Projects Section -->
         <div class="two-columns" id="projects-id">
             <h2>Projects</h2>
             <div class="right-text">
-                <!-- Bootstrap flex to wrap the images -->
                 <ul class="d-flex flex-sm-wrap">
                     <!-- Project one - Prework study guide - bigger than the rest -->
                     <li class="project-one">
@@ -86,6 +92,7 @@
             </div>
         </div>
 
+        <!-- Contacts Section -->
         <div class="two-columns" id="contact-me">
             <h2>Contact Me</h2>
             <div class="right-text text-center contact-body">
@@ -93,12 +100,12 @@
                 <p class ="contact"><a href="https://github.com/So-Emily" target="_blank"> GitHub </a></p>
                 <p class ="contact"><a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank"> LinkedIn </a></p>
                 <p class ="contact"><a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank"> Steam </a></p>
-                <p class ="contact"> Email: &nbsp;<a href="mailto:esoriano110@gmail.com">esoriano110@gmail.com</a></p>
+                <p class ="contact"> Email:&nbsp;<a href="mailto:esoriano110@gmail.com">esoriano110@gmail.com</a></p>
             </div>
         </div>
     </main>
 
     <!-- Custom JS -->
-    <script src="./assets/script.js"></script>
+    <script src="assets/script.js"></script>
     </body>
 </html>
