@@ -144,7 +144,7 @@ display: block;
 
 /* container */
 .two-columns {
-    padding-top: 20px;
+    padding-top: -100px;
     display: flex;
 }
 
@@ -178,7 +178,6 @@ display: block;
     width: 100%; 
 }
 
-
 /* the line after each header */
 .two-columns h2::after {
     content: "";
@@ -190,6 +189,10 @@ display: block;
     left: 100%;
     top: 10px;
     border-radius: 5px;
+}
+
+#about-me {
+    padding-top: 1.5%;
 }
 
 /* styling of each right column */
@@ -308,7 +311,9 @@ ul.d-flex {
     .two-columns .about-title {
         width: 20%;
     }
-    
+    .two-columns .about-body{
+        font-size: large;
+    }
 }
 
 @media screen and (max-width: 480px) {
