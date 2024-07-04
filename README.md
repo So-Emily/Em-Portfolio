@@ -4,7 +4,7 @@
 ## Description
 The start of my portfolio webpage, at least my portfolio for the UCB portfolio challenege.
 
-![Portfolio-Snip](https://github.com/So-Emily/Em-Portfolio/assets/10500315/f4ce2c1e-9465-4cea-bb38-13ba8a48d551)
+![Portfolio-Snip](https://github.com/So-Emily/Em-Portfolio/assets/10500315/b2400293-c281-467a-997c-c168555f4aaf)
 
 ## Table of Contents
 - [Deployment](#deployment)
